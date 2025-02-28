@@ -13,20 +13,17 @@
 - [x] A exclusão de produtos não deve ser permitida de forma imediata, o usuário deve confirmar a ação;
 
 ## RNFs
-- [x] SOLID Principles
-  - O código deve seguir os princípios SOLID.
-- [x] Versionamento
-  - Utilizar GIT para versionamento do código.
+- [x] O código deve seguir os princípios SOLID.
+- [x] Utilizar GIT para versionamento do código.
 - [x] Criar um repositório público no GitHub com commits bem documentados.
-- [x] Shadcn.
-- [ ] Setup Jest.
-- [ ] Storybook
-- [x] UX/UI
 - [x] Um olhar aguçado para UX e UI podem trazer um diferencial para seu projeto.
-- [x] Yup/Zod
-- [x] Utilizar uma das bibliotecas para gerir os formulários.
-- [ ] Testes unitários
-- [ ] Exigência de cobertura de no mínimo 30%;
+- [x] Yup/Zod - Utilizar uma das bibliotecas para gerir os formulários.
+- [ ] Testes unitários - Exigência de cobertura de no mínimo 30%;
+
+## Não obrigatório
+- [ ] Documente pelo menos um componente com o StoryBook.
+- [x] Utilizar o Shadcn;
+- [ ] Utilizar o conceito de FDD;
 
 ## Técnologias utilizadas
 * Tecnologias

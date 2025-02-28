@@ -5,13 +5,14 @@ import {
   getProductById,
   getProducts,
   getProductsByCategory,
-} from '@/services/products'
+} from '@/services/products/products'
 
 export function useGetProducts() {
   return useQuery({
     queryKey: productsKey.all,
     queryFn: async () => await getProducts(),
     refetchOnWindowFocus: false,
+    staleTime: 1000 * 60 * 5, // 5 minutes
   })
 }
 

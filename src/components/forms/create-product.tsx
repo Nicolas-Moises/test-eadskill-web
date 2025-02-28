@@ -24,7 +24,7 @@ import { transformPriceToNumber } from '@/helpers/format-price'
 import { useGetCategories } from '@/hooks/use-get-categories'
 import { cn } from '@/lib/utils'
 import { productFormSchema, ProductFormValues } from '@/schemas/product.schema'
-import { createProduct } from '@/services/products'
+import { createProduct } from '@/services/products/products'
 
 export function CreateProduct() {
   const [isValidImage, setIsValidImage] = useState(false)

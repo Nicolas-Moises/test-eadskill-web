@@ -15,7 +15,7 @@ import {
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog'
 import { Button } from '@/components/ui/button'
-import { deleteProduct } from '@/services/products'
+import { deleteProduct } from '@/services/products/products'
 
 interface DeleteProductModalProps {
   id: number

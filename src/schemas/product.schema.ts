@@ -24,7 +24,8 @@ export const productFormSchema = z.object({
       required_error: 'O nome do produto é obrigatório.',
     })
     .min(2, 'O nome do produto é obrigatório.')
-    .max(30, 'O tílulo deve ter no máximo 30 caracteres.'),
+    .max(30, 'O tílulo deve ter no máximo 30 caracteres.')
+    .transform((text) => text.trim()),
 })
 
 export type ProductFormValues = z.infer<typeof productFormSchema>

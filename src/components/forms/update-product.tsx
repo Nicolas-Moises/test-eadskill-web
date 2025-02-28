@@ -9,7 +9,7 @@ import {
   transformPriceToNumber,
 } from '@/helpers/format-price'
 import { productFormSchema, ProductFormValues } from '@/schemas/product.schema'
-import { updateProduct } from '@/services/products'
+import { updateProduct } from '@/services/products/products'
 import { Product } from '@/types/products'
 
 import { Button } from '../ui/button'

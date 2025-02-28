@@ -6,6 +6,7 @@
   "rules": {
     "camelcase": "off",
     "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error"
+    "simple-import-sort/exports": "error",
+    "no-use-before-define": "off"
   }
 }

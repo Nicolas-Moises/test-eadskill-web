@@ -1,4 +1,5 @@
 import { Plus } from 'lucide-react'
+import { Metadata } from 'next'
 import Link from 'next/link'
 
 import { AppLayout, PageTitle } from '@/components/app-layout'
@@ -6,6 +7,11 @@ import { Categories } from '@/components/products/categories'
 import { ProductsList } from '@/components/products/products-list'
 import { buttonVariants } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
+
+export const metadata: Metadata = {
+  title: 'Produtos',
+  description: 'Cadastre um produto para seu catálogo',
+}
 
 export default function Products() {
   return (

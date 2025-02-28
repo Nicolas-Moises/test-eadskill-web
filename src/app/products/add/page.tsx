@@ -1,6 +1,13 @@
+import { Metadata } from 'next'
+
 import { AppLayout, PageTitle } from '@/components/app-layout'
 import { CreateProduct } from '@/components/forms/create-product'
 import { LinkBack } from '@/components/ui/link-back'
+
+export const metadata: Metadata = {
+  title: 'Cadastrar produto',
+  description: 'Cadastre um produto para seu catálogo',
+}
 
 export default function AddProduct() {
   return (
