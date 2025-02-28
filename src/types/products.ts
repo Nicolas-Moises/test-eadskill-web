@@ -24,6 +24,7 @@ export interface ProductBase {
 
 export interface ProductHandlers extends Omit<ProductBase, 'id'> {
   description: string
+  category: string
 }
 
 export interface ProductDisplay extends ProductBase {

@@ -17,6 +17,7 @@ export function StarRating({ rating, size = 20, count }: StarRatingProps) {
           return (
             <div key={i}>
               <Star
+                data-testid="lucide-icon"
                 size={size}
                 className={cn('text-yellow-500', {
                   'fill-yellow-500': i + 1 <= rating,
