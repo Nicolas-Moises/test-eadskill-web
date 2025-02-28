@@ -95,3 +95,25 @@ Para executar os testes unitários, siga os passos abaixo:
    ```
 
 Os testes devem ser executados e você verá um relatório de cobertura de testes.
+
+## Executar aplicação com Docker
+
+1. **Executer com docker.**
+   ```bash
+   step 1
+      
+   docker build -t eadskill-web .
+
+   step 2
+   
+   docker run -p 3000:3000 eadskill-web
+
+   ```
+   Abra seu navegador e vá para `http://localhost:3000`.
+
+2. **Executer com docker compose**
+   ```bash
+   docker compose up
+   ```
+   Abra seu navegador e vá para `http://localhost:3000`.
+
