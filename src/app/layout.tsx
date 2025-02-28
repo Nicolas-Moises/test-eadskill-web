@@ -2,6 +2,11 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans } from 'next/font/google'
+import { Toaster } from 'sonner'
+
+import { AppLayout } from '@/components/app-layout'
+import { Header } from '@/components/header'
+import { Providers } from '@/providers/providers'
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -21,8 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${plusJakartaSans.variable} bg-background`}>
-        {children}
+      <body className={`relative ${plusJakartaSans.variable} bg-background`}>
+        <Providers>
+          <Toaster closeButton />
+          <Header />
+          <AppLayout>{children}</AppLayout>
+        </Providers>
       </body>
     </html>
   )
