@@ -18,7 +18,7 @@
 - [x] Criar um repositório público no GitHub com commits bem documentados.
 - [x] Um olhar aguçado para UX e UI podem trazer um diferencial para seu projeto.
 - [x] Yup/Zod - Utilizar uma das bibliotecas para gerir os formulários.
-- [ ] Testes unitários - Exigência de cobertura de no mínimo 30%;
+- [x] Testes unitários - Exigência de cobertura de no mínimo 30%;
 
 ## Não obrigatório
 - [ ] Documente pelo menos um componente com o StoryBook.
@@ -31,3 +31,60 @@
 * NextJs 14 (app dir);
 * Tailwind CSS;
 * Jest;
+
+# Documentação do Projeto
+
+## Rodando o Projeto
+
+Este projeto foi construído com **Next.js 14** e **TypeScript**. Para rodar a aplicação, siga os passos abaixo:
+
+### Pré-requisitos
+
+- Node.js (versão >20)
+- npm ou yarn
+
+### Passos para Setup
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/Nicolas-Moises/test-eadskill-web.git
+   cd test-eadskill-web
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+
+3. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
+
+4. **Acesse a aplicação:**
+   Abra seu navegador e vá para `http://localhost:3000`.
+
+## Executando os Testes
+
+Para executar os testes unitários, siga os passos abaixo:
+
+1. **Certifique-se de que as dependências estão instaladas (veja a seção de Setup).**
+
+2. **Execute os testes:**
+   ```bash
+   npm test
+   # ou
+   yarn test
+   ```
+3.  **Execute os testes com coverage:**
+   ```bash
+   npm run test:coverage
+   # ou
+   yarn run test:coverage
+   ```
+
+Os testes devem ser executados e você verá um relatório de cobertura de testes.
