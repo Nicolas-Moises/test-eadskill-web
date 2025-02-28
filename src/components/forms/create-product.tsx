@@ -111,10 +111,10 @@ export function CreateProduct() {
         </div>
       </div>
       <form
-        className="space-y-4"
+        className="@container/create-form space-y-4"
         onSubmit={handleSubmit((data) => handleCreateProduct(data))}
       >
-        <div className="grid grid-cols-2 gap-6">
+        <div className="@2xl/create-form:grid-cols-2 grid grid-cols-1 gap-4">
           <div className="space-y-2.5">
             <Label htmlFor="title">Nome do Produto</Label>
             <Input

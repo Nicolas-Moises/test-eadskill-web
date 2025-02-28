@@ -72,10 +72,10 @@ export function UpdateProduct({ product, setOpen }: UpdateProductProps) {
 
   return (
     <form
-      className="space-y-4"
+      className="@container/update-form space-y-4"
       onSubmit={handleSubmit((data) => handleUpdateProduct(data))}
     >
-      <div className="grid grid-cols-2 gap-6">
+      <div className="@2xl/update-form:grid-cols-2 grid gap-4">
         <div className="space-y-2.5">
           <Label htmlFor="title">Nome do Produto</Label>
           <Input

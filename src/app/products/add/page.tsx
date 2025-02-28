@@ -11,7 +11,7 @@ export default function AddProduct() {
         <p>Cadastre um produto para venda no marketplace</p>
       </div>
 
-      <div className="mt-10 grid grid-cols-[440px,_1fr] gap-6">
+      <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-[440px,_1fr]">
         <CreateProduct />
       </div>
     </AppLayout>

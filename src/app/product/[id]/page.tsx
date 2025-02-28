@@ -25,7 +25,7 @@ export default function Product() {
   return (
     <AppLayout>
       <LinkBack path={'/products'} />
-      <div className="mt-6 flex items-center justify-between">
+      <div className="mt-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between md:gap-6">
         <div className="space-y-3">
           <PageTitle title="Detalhes do Produto" />
           <p>Gerencie as informações do produto cadastrado</p>
@@ -46,7 +46,7 @@ export default function Product() {
         </div>
       </div>
 
-      <div className="mt-10 grid grid-cols-[415px,_1fr] gap-6">
+      <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-[415px,_1fr]">
         {isLoading ? <ProductItemSkeleton /> : null}
         {product && (
           <>

@@ -27,7 +27,7 @@ export default function Category() {
         <p>Acesse gerencie a sua lista de produtos à venda</p>
       </div>
 
-      <div className="col-span-2 mt-10 grid grid-cols-3 gap-x-6 gap-y-10">
+      <div className="grid-products mt-10">
         {isProductsError ? <ProductsError /> : null}
         {isProductsLoading
           ? Array.from(

@@ -50,16 +50,16 @@ export function ProductsList() {
   if (isProductsLoading) {
     return (
       <>
-        <div className="flex items-center justify-end gap-3 pb-8">
+        <div className="flex flex-col gap-3 pb-8 sm:flex-row sm:items-center sm:justify-end">
           <span className="text-sm font-medium text-muted-foreground">
             Ordenar por:
           </span>
           <Skeleton className="h-10 w-56" />
         </div>
-        <div className="col-span-2 grid grid-cols-3 gap-x-6 gap-y-10">
+        <div className="grid-products">
           {Array.from(
             {
-              length: 10,
+              length: 9,
             },
             (_, index) => (
               <ProductSkeleton key={index} />
@@ -72,13 +72,13 @@ export function ProductsList() {
 
   return (
     <>
-      <div className="flex items-center justify-end gap-3 pb-8">
+      <div className="flex flex-col gap-3 pb-8 sm:flex-row sm:items-center sm:justify-end">
         <span className="text-sm font-medium text-muted-foreground">
           Ordenar por:
         </span>
         <ProductsSort currentSort={sortOrder} onSort={setSortOrder} />
       </div>
-      <div className="col-span-2 grid grid-cols-3 gap-x-6 gap-y-10">
+      <div className="grid-products">
         {sortedProducts.length > 0 ? (
           sortedProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
