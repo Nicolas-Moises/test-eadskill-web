@@ -1,5 +1,7 @@
 # EADSKILL Frontend
 
+![Preview do Projeto](/public/preview/.png)
+
 ## RFs
 
 - [x] - Desenvolver uma página que viabilize o CRUD completo de produtos, utilizando a API pública Fake Store API
