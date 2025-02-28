@@ -57,15 +57,20 @@ Este projeto foi construído com **Next.js 14** e **TypeScript**. Para rodar a a
    # ou
    yarn install
    ```
+   
+3. **Copie as variáveis ambiente:**
+   ```bash
+    cp .env.example .env
+   ```
 
-3. **Inicie o servidor de desenvolvimento:**
+4. **Inicie o servidor de desenvolvimento:**
    ```bash
    npm run dev
    # ou
    yarn dev
    ```
 
-4. **Acesse a aplicação:**
+5. **Acesse a aplicação:**
    Abra seu navegador e vá para `http://localhost:3000`.
 
 ## Executando os Testes
