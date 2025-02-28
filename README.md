@@ -1,6 +1,6 @@
 # EADSKILL Frontend
 
-![Preview do Projeto](/public/preview/.png)
+![Preview do Projeto](/public/preview.png)
 
 ## RFs
 
